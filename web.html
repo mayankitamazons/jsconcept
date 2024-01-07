@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webcam Zoom Example</title>
+  <style>
+    #webcam {
+      transform: scale(0.8); /* Adjust the zoom level as needed */
+    }
+  </style>
+</head>
+<body>
+  <video id="webcam" autoplay></video>
+
+  <script>
+    // Get the video element
+    const videoElement = document.getElementById('webcam');
+
+    // Access the user's webcam
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        // Set the video source to the webcam stream
+        videoElement.srcObject = stream;
+      })
+      .catch(error => {
+        console.error('Error accessing webcam:', error);
+      });
+  </script>
+</body>
+</html>
