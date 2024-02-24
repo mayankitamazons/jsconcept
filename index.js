@@ -50,6 +50,9 @@ const result2=function (){
 const result3=()=>{
   console.log('arrow function called ');
 }
+const resnew=()=>{
+  console.log('Lets go');
+}
 
 // const multiply=(a,b)=> a*b;
 // result1();

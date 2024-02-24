@@ -57,15 +57,27 @@
 
    //  console.log(typeof(null));
 
-var answer="YES";
-   switch (answer) {   
-      case "YES":     
-      console.log("You said YES!"); 
+// var answer="YES";
+//    switch (answer) {   
+//       case "YES":     
+//       console.log("You said YES!"); 
     
-      case "NO":     
-      console.log("You said no. :(");
-      break;
-      case "ELSE":     
-      console.log("You said ELSE. :(");
+//       case "NO":     
+//       console.log("You said no. :(");
+//       break;
+//       case "ELSE":     
+//       console.log("You said ELSE. :(");
    
+//    }
+
+function a(){
+   var b=10; 
+   c();
+   function c(){
+     
    }
+  
+}
+
+a(); 
+console.log(b);

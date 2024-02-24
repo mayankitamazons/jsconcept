@@ -1,13 +1,13 @@
 // console.log("closure Example");
-// function x() {
-//   var a = 5;
-//   function y() {
-//     console.log(a);
-//   }
-//   a = 20;
-//   y();
-// }
-// x();
+function x() {
+  var a = 5;
+  function y() {
+    console.log(a);
+  }
+  a = 20;
+  y();
+}
+x();
 
 // create a program to print 1,2,3,4,5 after 1,2,3,4,5 sec
 console.log("closure Example 2");
