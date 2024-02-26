@@ -1,13 +1,13 @@
-// console.log("closure Example");
-// function x() {
-//   var a = 5;
-//   function y() {
-//     console.log(a);
-//   }
-//   a = 20;
-//   y();
-// }
-// x();
+console.log("closure Example");
+function x() {
+  var a = 5;
+  function y() {
+    console.log(a);
+  }
+  a = 20;
+  y();
+}
+x();
 
 
 // // create a program to print 1,2,3,4,5 after 1,2,3,4,5 sec
@@ -75,34 +75,34 @@
 // // number(); // 2
 
 // function factory 
-function createMultiplier(factor){
-  return function(number){
-    return number*factor;
-  }
-}
-const double=createMultiplier(2);
-console.log(double(3));
+// function createMultiplier(factor){
+//   return function(number){
+//     return number*factor;
+//   }
+// }
+// const double=createMultiplier(2);
+// console.log(double(3));
 
-const triple=createMultiplier(3);
-console.log(`triple of 3 is ${triple(3)}`);
+// const triple=createMultiplier(3);
+// console.log(`triple of 3 is ${triple(3)}`);
 
-// used to create callback function 
-function fetchdata(url,callback){
-  const data=[] ///
-  callback(data);
-}
-function processdata(data){
-  console.log("Processing Data: ",data);
-}
-fetchdata('url',processdata);
+// // used to create callback function 
+// function fetchdata(url,callback){
+//   const data=[] ///
+//   callback(data);
+// }
+// function processdata(data){
+//   console.log("Processing Data: ",data);
+// }
+// fetchdata('url',processdata);
 
-// cons of closure 
-// 1) Memory Consumption 
-function heavyOpetion(){
-  const data=Array(1000000).fill("Some Data");
-  return function(){
-      console.log(data.length);
-  }
-}
-const closure=heavyOpetion();
-console.log("Closure Call",closure);
+// // cons of closure 
+// // 1) Memory Consumption 
+// function heavyOpetion(){
+//   const data=Array(1000000).fill("Some Data");
+//   return function(){
+//       console.log(data.length);
+//   }
+// }
+// const closure=heavyOpetion();
+// console.log("Closure Call",closure);
