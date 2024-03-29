@@ -8,7 +8,7 @@ javascript some basic question
 6) what is temporal dead zone for let 
 6) explain var, let & const 
 7) explain lexical scope 
-8) what is callback
+8) what is callback & explain CallBackHell
 9) what is this & window in JS
 10) what is shortest program is js 
 11) undefied v/s not defined 
@@ -120,5 +120,25 @@ can correct via eiter let or closure
 
 22) what is Counstructor function ?
 23) explain garbe collection with closure 
-24) Annoymous function & First Class Function , high order function ,
-iife 
+24) Function statement , function expression , function delcaration 
+  // function statement 
+  function a(){
+
+  }
+  // function expression & also its annoymous function 
+  var b=function(){
+    console.log('b called');
+  }
+25) Annoymous function & First Class Function , high order function ,
+iife ,arrow function 
+// annoymous function 
+function (){
+
+} 
+
+A first-class function is a concept in programming languages where functions are treated as first-class citizens. This means that functions can be treated like any other value: they can be assigned to variables, passed as arguments to other functions, returned from other functions, and stored in data structures
+26) Explain Event Loop and how its works
+
+
+
+

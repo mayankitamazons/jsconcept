@@ -13,7 +13,7 @@ fs.readFile('f1.txt','utf-8',()=>{
     console.log('IO Polling Finish');
 
     setTimeout(() => {
-        console.log('Hello From timer 2 inside fs');
+        console.log('Hello F.rom timer 2 inside fs');
     }, 0);
 
     setTimeout(() => { 
